@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Useless site</title>
+    <link rel="stylesheet" href="gusza110811.github.io/style.css">
+</head>
+<body>
+    <button onclick="message()">Spit out random nonsense</button>
+
+    <p id="text">JavaScript is so Millenials</p>
+</body>
+
+<script>
+    function message() {
+        const messages = [
+            "The quick brown fox jumps over the lazy dog.",
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+            "To be or not to be, that is the question.",
+            "May the Force be with you.",
+            "All your base are belong to us.",
+            "Life is like a box of chocolates.",
+            "I think, therefore I am.",
+            "Houston, we have a problem.",
+            "It was the best of times, it was the worst of times.",
+            "Keep calm and carry on.",
+            "Do or do not, there is no try.",
+            "Elementary, my dear Watson.",
+            "I'm the king of the world!",
+            "Winter is coming.",
+            "Just keep swimming.",
+            "Why so serious?",
+            "It's-a me, Mario!",
+            "Hasta la vista, baby.",
+            "One does not simply walk into Mordor.",
+            "E=mc^2",
+            "42 is the answer to life, the universe, and everything.",
+            "In space, no one can hear you scream.",
+            "Open the pod bay doors, HAL.",
+            "I am Groot.",
+            "With great power comes great responsibility.",
+            "The cake is a lie.",
+            "All work and no play makes Jack a dull boy.",
+            "Call me Ishmael.",
+            "Frankly, my dear, I don't give a damn.",
+            "You can't handle the truth!",
+            "Toto, I've a feeling we're not in Kansas anymore.",
+            "Say hello to my little friend!",
+            "To infinity and beyond!",
+            "Hakuna Matata, it means no worries.",
+            "I'll be back.",
+            "Shaken, not stirred.",
+            "Nobody puts Baby in a corner.",
+            "This is Sparta!",
+            "What we've got here is failure to communicate."
+        ];
+
+        document.getElementById("text").innerHTML = messages[Math.floor(Math.random() * messages.length)];
+    }
+
+    message()
+</script>
+</html>
